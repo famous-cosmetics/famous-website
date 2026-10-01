@@ -1,0 +1,572 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #32112F;
+  --color-secondary: #C2185B;
+  --color-gold: #D4AF6A;
+
+  /* Background Colors */
+  --color-bg: #FFF5F8;
+  --color-white: #FFFFFF;
+
+  /* Text Colors */
+  --color-text: #32112F;
+  --color-muted: #806B79;
+
+  /* Border & Hover */
+  --color-border: #EADFE5;
+  --color-hover: #A3154D;
+}
+
+:root {
+  --primary-color: #112E81;
+  --secondary-color: #4382DF;
+  --modarate-color: #4647AE;
+  --fourth-color: #0085b9;
+  --text-color: #2B2426;
+  --white-color: #F0F0F0;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+body {
+  color: var(--text-color);
+}
+
+
+
+
+
+.App-container {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Playfair Display SC", serif; */
+  font-weight: 700;
+  letter-spacing: .5px;
+
+}
+
+
+
+
+/* .App-container {
+  width: 90%;
+  margin: 0 auto;
+} */
+
+
+
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #32112F;
+  text-align: center;
+}
+
+
+
+
+/* hero section */
+.hero-section {
+  width: 100%;
+  height: 550px;
+  background-image: url("./assets/images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+
+
+.all-products-display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  background-color: rgb(247, 247, 247);
+}
+
+.all-products-display .product-card {
+  text-align: center;
+  /* background-color: white; */
+  margin: 10px;
+}
+
+.product-card .product-header img {
+  position: relative;
+}
+
+.product-card .stock-out::after {
+  content: "স্টক আউট";
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  background-color: rgba(145, 0, 0, 0.712);
+  color: white;
+  font-size: 19px;
+  font-weight: 900;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px #111827;
+}
+
+.product-card .low-stock::after {
+  content: "স্টক কম";
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  background-color: rgba(161, 163, 3, 0.712);
+  color: white;
+  font-size: 19px;
+  font-weight: 900;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: .9999999;
+  text-shadow: 2px 2px #111827;
+}
+
+
+
+.product-header {
+  width: 100%;
+}
+
+.product-header img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* product not found */
+.product-not-found {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.product-not-found img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* search bar container */
+.search-bar-container {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  color: white;
+}
+
+.search-bar-container h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  padding: 0px 15px;
+}
+
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  padding-right: 15px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+.all-products-page h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 30px 0;
+}
+
+
+
+
+
+
+/* Accessories-section */
+.Accessories-section {
+  margin-top: 60px;
+}
+
+.Accessories-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 40px 0;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* filter styles layout */
+
+
+
+
+
+
+/* dashboard styles */
+.sidebar-component {
+  display: block;
+  z-index: 111;
+}
+
+
+/* login page for dashboard */
+.login-container {
+  width: 50%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.login-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-box>p {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.login-options a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #1d4ed8;
+}
+
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+.product-form-container {
+  padding: 30px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.product-form {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.product-form h2 {
+  margin-bottom: 5px;
+}
+
+.product-form p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 11px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-buttons button:last-child {
+  background: #111827;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.modal-box {
+  width: 50%;
+  padding: 25px;
+}
+
+.modal-action form {
+  width: 100%;
+
+
+}
+
+.modal-action form input {
+  width: 100%;
+  margin: 2px 0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: .5px solid rgb(209, 209, 209);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pagination styles */
+.pagination-div {
+  padding: 25px 0;
+}
+
+.pagination-div .btn {
+  width: 50px;
+  padding: 20px 10px !important;
+}
+
+.pagination-div .btn:first-child,
+.pagination-div .btn:last-child {
+  width: 100px;
+
+}
+
+.pagination-div .btn-number {
+  padding: 10px 16px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dashboard styles */
+.product-card .product-header {
+  position: relative;
+}
+
+.product-card .delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: rgb(172, 0, 0);
+  cursor: pointer;
+  display: none;
+}
+
+.product-card:hover .delete-button {
+  display: block;
+}
+
+
+.party-due form input {
+  padding: 2px 5px;
+}

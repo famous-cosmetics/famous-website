@@ -1,0 +1,390 @@
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .product-form {
+        padding: 20px;
+    }
+}
+
+
+
+
+.dashboard-content {
+    margin-left: 50px !important;
+}
+
+
+.modal-box {
+    width: 75% !important;
+    margin: 0 auto;
+}
+
+
+.not-fount-div {
+    margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1240px) {
+    .nav-items {
+        width: 60%;
+    }
+
+    .responsive a {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .responsive a.active {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 400px;
+        background-position: center center;
+
+    }
+
+    .dashboard-content {
+        width: 60%;
+        padding: 0 !important;
+    }
+
+    .login-container {
+        width: 80% !important;
+
+    }
+
+}
+
+
+
+.nav-items .logo img {
+    display: none;
+}
+
+.logo .cross-bars {
+    display: none;
+}
+
+.bars-icons {
+    display: none;
+}
+
+.responsive-sidebar {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .navigation-bar .logo {
+        width: 70%;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 250px !important;
+        background-position: center center;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .nav-items {
+        width: 320px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 102vh;
+        display: block;
+        background-color: #32112F;
+        color: white;
+        z-index: 11111;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+
+    }
+
+    .nav-items img {
+        display: block;
+    }
+
+    .nav-items .nav-list {
+        display: block;
+
+    }
+
+    .nav-items .logo img {
+        position: relative !important;
+    }
+
+    .nav-bar .cross-bars {
+        display: block;
+        font-size: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        right: -35px;
+        top: 25px;
+        font-size: 38px;
+        /* color: #D4AF6A; */
+        color: black;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    .nav-bar .bars-icons {
+        /* display: block !important; */
+        font-size: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .nav-items .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-items .logo img {
+        display: block;
+    }
+
+    .nav-items .responsive {
+        display: block;
+        padding: 15px 0;
+        line-height: 45px;
+        margin-top: 70px;
+    }
+
+    .nav-items .nav-list {
+        width: 100%;
+    }
+
+    .nav-items .responsive a {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        width: 100%;
+        font-size: 15px;
+        transition: .5s;
+        color: #D4AF6A;
+    }
+
+    .nav-items .responsive a:hover {
+        background-color: rgb(206, 203, 203);
+
+    }
+
+    .nav-items .responsive a.active {
+        background-color: #C2185B;
+        color: rgb(250, 250, 250);
+    }
+
+    .login-container {
+        width: 100%;
+
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+    .login-box h2 {
+        font-size: 22px !important;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .dashboard-content h2 {
+        font-size: 24px !important;
+        padding: 15px 0;
+    }
+
+    .product-gellary .not-found-container {
+        width: fit-content;
+    }
+
+    .not-found-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .responsive-sidebar {
+        display: block;
+    }
+
+    .desktop-sidebar {
+        display: none;
+    }
+
+    .dashboard-content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .product-form-container .form-group label {
+        font-size: 16px !important;
+    }
+}
+
+
+
+@media (max-width:476px) {
+
+    .App-container {
+        width: 100% !important;
+    }
+
+    .nav-items {
+        width: 220px;
+    }
+
+    .nav-bar .cross-bars {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        right: -35px;
+        top: 25px;
+        font-size: 30px;
+        color: #D4AF6A;
+        text-shadow: 5px 5px 14px rgba(0, 0, 0, 0.781);
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 190px !important;
+        background-position: center center;
+
+    }
+
+
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    h5 {
+        font-size: 16px !important;
+    }
+
+    .text-3xl {
+        font-size: 28px;
+    }
+
+    .short-cuts h3 {
+        font-size: 16px !important;
+    }
+
+    .search-bar-container h4 {
+        font-size: 14px !important;
+    }
+
+    .search-bar-container input {
+        font-size: 12px !important;
+    }
+
+
+
+
+
+    /* product card styles */
+    .product-card .product-header {
+        padding: 0;
+    }
+
+    .product-card .product-header img {
+        width: 250px;
+        height: 80px;
+    }
+
+    .product-body h5 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .product-body p {
+        font-size: 12px;
+    }
+
+    .pagination-div {
+        padding: 0;
+
+    }
+
+    .pagination-div button {
+        font-size: 12px;
+    }
+
+    .pagination-div .btn:first-child,
+    .pagination-div .btn:last-child {
+        width: 70px !important;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* dashboard styles */
+    .sidebar-component {
+        display: none !important;
+        z-index: 111;
+    }
+
+
+    .sidebar-component .sideNabar_items {
+        display: none;
+        width: 150px;
+    }
+
+
+    .login-container {
+        width: 100% !important;
+    }
+
+    /* product update */
+    .modal-box {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
