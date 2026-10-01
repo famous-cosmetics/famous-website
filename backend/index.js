@@ -24,21 +24,18 @@ const mongoose = require("mongoose")
 app.use(express.json());
 
 
-app.use(
-    cors({
-        origin: "*",
-    })
-);
+app.use(cors());
 
-const allowedOrigins = [
-    "http://localhost:5173",
-    process.env.FRONTEND_URL,
-].filter(Boolean);
 
-app.use(cors({
-    origin: allowedOrigins,
-    credentials: true,
-}));
+
+// const allowedOrigins = [
+//     "http://localhost:5173",
+//     process.env.FRONTEND_URL,
+// ].filter(Boolean);
+
+// app.use(cors({
+//     origin: allowedOrigins,
+// }));
 
 
 
